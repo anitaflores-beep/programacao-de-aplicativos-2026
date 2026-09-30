@@ -38,7 +38,7 @@
             Notificações
         </a>
 
-        <a href="#" class="menu-item">
+        <a href="#" class="menu-item" id="botaoAbrirModal">
             <span>＋</span>
             Criar
         </a>
@@ -73,8 +73,33 @@
                 </div>
             </div>
         </section>
-    </main>
+<section class="feed" id="feed">
+            
+</aside>
 
-    <aside class="suggestions"></aside>
+
+ <script src="index.js"></script>
+
+ <div class="modal hidden" id="modalPost">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Nova puplicação</h2>
+
+            <button id="botaoFecharModal">X</button>
+
+        </div>
+        <div class="modal-body">
+            <label for="imPost">URL da imagem</label>
+            <input type="text" id="imPost" placeholder="https://...">
+
+            <label for="legendPost">Legenda</label>
+            <textarea id="legendPost" placeholder="digite a legenda porra"></textarea>
+
+            <button class="botaoPublicar" id="botaoPublicar">Publicar</button>
+
+        </div>
+    </div>
+</div>
 </body>
+
 </html>
