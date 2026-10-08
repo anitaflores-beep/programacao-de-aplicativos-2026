@@ -349,3 +349,7 @@ button {
 .hidden {
     display: none;
 }
+
+.liked {
+    color: #d62976;
+}
