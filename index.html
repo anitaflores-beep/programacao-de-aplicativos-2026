@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO list DESI</title>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" ></script>
+
+</head>
+<body>
+    
+    <main class="container">
+        <header class="header">
+            <div>
+                <h1>Minhas tarefas</h1>
+                <p>Organize seu dia e suas atividades</p>
+            </div>
+
+            <span class="material-symbols-outlined header-icon">
+                checklist
+            </span>
+
+        </header>
+
+        <div class="form-tarefa">
+            <input type="text" id="input-tarefa" placeholder="fala vagabundo oq tu quer?"/>
+
+            <button type="button">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+                Adicionar
+            </button>
+        </div>
+
+        <nav class="filtros">
+            <button type="button" class="flitro ativo">Todas</button>
+            <button type="button" class="flitro">Pendentes</button>
+            <button type="button" class="flitro">Concluidas</button>
+        </nav>
+
+
+        <ul id="listas-tarefas" class="lista-tarefas">
+            <li class="tarefa">
+                <button class="botao-check" onclick="alternarTarefa()"></button>
+                <span class="material-symbols-outlined">
+                    radio_button_unchecked
+                </span>
+                <span class="tarefa-texto">
+                    Estudar javascript
+                </span>
+
+                <button class="botao-excluir" onclick="excluirTarefa()">
+                <span class="material-symbols-outlined">
+                    delete
+                </span>
+            </button>
+            </li>
+        </ul>
+
+
+    </main>
+
+</body>
+</html>

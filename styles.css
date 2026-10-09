@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(248, 235, 242, 0.863);
+    color: blueviolet;
+    min-height: 100vh;
+    padding: 50px 20px;
+} 
+
+button, input {
+    font: inherit;
+}
+button {
+    cursor: pointer;
+}
+/*-----------------------------------------------------*/
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+} 
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: rgb(253, 72, 163);
+}
+
+.header-icon {
+    font-size: 38px;
+    color: magenta;
+    background-color: rgb(211, 127, 244);
+    border-radius: 15px;
+    padding: 2px;
+}
+/*------------------*/
+.form-tarefa{
+    display: flex;
+    background-color: darkmagenta;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.form-tarefa input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px;
+
+}
+
+.form-tarefa button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background-color: #4f46ef;
+    color: #fafafa;
+    border: none;
+}
+
+.form-tarefa button:hover {
+    background-color: #4338ca;
+}
+/*------------------------/**/
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.flitro {
+    padding: 10px 16px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: rgb(232, 81, 221);
+    border: none;
+}
+
+.flitro:hover {
+    background-color: #e8e7ff;
+}
+.flitro.ativo {
+    background-color: #e8e7ff;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+/*---------------------*/
+.lista-tarefas{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style:none;
+}
+
+.tarefa{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: rgb(255, 135, 195);
+    padding: 18px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.tarefa-texto{
+    flex: 1;
+    overflow-wrap: anywhere;
+
+}
+
+.tarefa-concluida .tarefa-texto{
+    text-decoration: line-through;
+    color: #6c92c7;
+}
+
+.botao-check, .botao-excluir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: rgb(118, 27, 203);
+    border: none;
+}
+
+.botao-excluir:hover {
+    color: #ef4444;
+}
+
+.tarefa-concluida .botao-check {
+    color: rgb(127, 38, 211);
+}
